@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>聚美臻选 - 专业服务</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 浮动装饰元素 -->
+    <div class="floating-decoration"></div>
+    <div class="floating-decoration"></div>
+    <div class="floating-decoration"></div>
+    
+    <!-- 微信浏览器提示遮罩 -->
+    <div id="wechat-mask" class="wechat-mask">
+        <div class="wechat-tip">
+            <i class="fas fa-external-link-alt"></i>
+            <h3>请在浏览器中打开</h3>
+            <p>点击右上角三个点，选择"在浏览器中打开"</p>
+        </div>
+    </div>
 
+    <!-- 非浙江IP限制提示 -->
+    <div id="location-restrict" class="location-restrict">
+        <div class="restrict-content">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>访问受限</h3>
+            <p>当前地区暂不支持访问</p>
+            <a href="https://www.tencentfoundation.org/" class="redirect-btn">了解更多</a>
+        </div>
+    </div>
+
+    <!-- 主内容区域 -->
+    <div id="main-content" class="main-content">
+        <!-- 头部 -->
+        <header class="header">
+            <h1 class="logo">聚美臻选</h1>
+            <p class="subtitle">专业服务 · 品质保证</p>
+        </header>
+
+        <!-- 服务选择区域 -->
+        <section class="service-section">
+            <div class="service-grid">
+                <div class="service-card" data-level="low">
+                    <div class="card-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>基础服务</h3>
+                    <p>优质体验</p>
+                    <div class="card-hover">
+                        <span>点击选择</span>
+                    </div>
+                </div>
+
+                <div class="service-card" data-level="medium">
+                    <div class="card-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>标准服务</h3>
+                    <p>专业品质</p>
+                    <div class="card-hover">
+                        <span>点击选择</span>
+                    </div>
+                </div>
+
+                <div class="service-card" data-level="high">
+                    <div class="card-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>高级服务</h3>
+                    <p>尊享体验</p>
+                    <div class="card-hover">
+                        <span>点击选择</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 区域选择模态框 -->
+        <div id="area-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="modal-title">选择服务区域</h2>
+                    <button class="close-btn" id="close-modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="area-grid" class="area-grid"></div>
+                    <div class="area-tip">
+                        <i class="fas fa-info-circle"></i>
+                        <span>点击区域可跳转到地图导航</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 服务详情模态框 -->
+        <div id="detail-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>服务详情</h2>
+                    <button class="close-btn" id="close-detail-modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="service-details" class="service-details"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部信息 -->
+        <footer class="footer">
+            <p>&copy; 2024 聚美臻选. 专业服务，品质保证</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
